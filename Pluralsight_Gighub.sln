@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluralsight_Gighub", "Pluralsight_Gighub\Pluralsight_Gighub.csproj", "{28030019-1CC5-403A-A63A-330DDDB4C748}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28030019-1CC5-403A-A63A-330DDDB4C748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28030019-1CC5-403A-A63A-330DDDB4C748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28030019-1CC5-403A-A63A-330DDDB4C748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28030019-1CC5-403A-A63A-330DDDB4C748}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADC310FE-D8D2-4EBC-8BC7-E8E2178F1E4D}
+	EndGlobalSection
+EndGlobal
