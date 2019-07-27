@@ -29,6 +29,7 @@ namespace Pluralsight_Gighub.Controllers
         
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel)
         {
             var gig = new Gig
