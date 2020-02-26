@@ -1,8 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace Pluralsight_Gighub.Models
+﻿namespace Pluralsight_Gighub.Models
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+
     public class Gig
     {
         public int Id { get; set; }

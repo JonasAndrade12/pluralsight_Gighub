@@ -2,7 +2,7 @@ namespace Pluralsight_Gighub.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class OverrideConvetionsForGigsAndGenre : DbMigration
     {
         public override void Up()
@@ -20,7 +20,7 @@ namespace Pluralsight_Gighub.Migrations
             AddForeignKey("dbo.Gigs", "Artist_Id", "dbo.AspNetUsers", "Id", cascadeDelete: true);
             AddForeignKey("dbo.Gigs", "Genre_Id", "dbo.Genres", "Id", cascadeDelete: true);
         }
-        
+
         public override void Down()
         {
             DropForeignKey("dbo.Gigs", "Genre_Id", "dbo.Genres");

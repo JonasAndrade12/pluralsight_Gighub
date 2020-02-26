@@ -1,8 +1,8 @@
-﻿using System.Data.Entity;
-using Microsoft.AspNet.Identity.EntityFramework;
-
-namespace Pluralsight_Gighub.Models
+﻿namespace Pluralsight_Gighub.Models
 {
+    using System.Data.Entity;
+    using Microsoft.AspNet.Identity.EntityFramework;
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Gig> Gigs { get; set; }

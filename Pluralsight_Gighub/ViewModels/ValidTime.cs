@@ -1,9 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-
-namespace Pluralsight_Gighub.ViewModels
+﻿namespace Pluralsight_Gighub.ViewModels
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.Globalization;
+
     public class ValidTime : ValidationAttribute
     {
         public override bool IsValid(object value)

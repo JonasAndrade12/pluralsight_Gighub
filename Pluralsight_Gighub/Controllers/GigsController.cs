@@ -1,12 +1,11 @@
-﻿using System;
-using System.Linq;
-using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Pluralsight_Gighub.Models;
-using Pluralsight_Gighub.ViewModels;
-
-namespace Pluralsight_Gighub.Controllers
+﻿namespace Pluralsight_Gighub.Controllers
 {
+    using System.Linq;
+    using System.Web.Mvc;
+    using Microsoft.AspNet.Identity;
+    using Pluralsight_Gighub.Models;
+    using Pluralsight_Gighub.ViewModels;
+
     public class GigsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,16 +25,22 @@ namespace Pluralsight_Gighub.Controllers
 
             return View(viewModel);
         }
-        
+
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = _context.Genres.ToList();
+                return View("Create", viewModel);
+            }
+
             var gig = new Gig
             {
                 ArtistId = User.Identity.GetUserId(),
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };

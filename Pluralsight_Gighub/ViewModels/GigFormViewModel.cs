@@ -1,10 +1,10 @@
-﻿using Pluralsight_Gighub.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace Pluralsight_Gighub.ViewModels
+﻿namespace Pluralsight_Gighub.ViewModels
 {
+    using Pluralsight_Gighub.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     public class GigFormViewModel
     {
         [Required]

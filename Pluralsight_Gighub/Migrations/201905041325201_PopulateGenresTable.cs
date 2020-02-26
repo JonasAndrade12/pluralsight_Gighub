@@ -1,7 +1,7 @@
 namespace Pluralsight_Gighub.Migrations
 {
     using System.Data.Entity.Migrations;
-    
+
     public partial class PopulateGenresTable : DbMigration
     {
         public override void Up()
@@ -11,7 +11,7 @@ namespace Pluralsight_Gighub.Migrations
             Sql("INSERT INTO Genres (Id, Name) VALUES (3, 'Rock')");
             Sql("INSERT INTO Genres (Id, Name) VALUES (4, 'Country')");
         }
-        
+
         public override void Down()
         {
             Sql("DELETE FROM Genres WHERE ID IN (1, 2, 3, 4)");

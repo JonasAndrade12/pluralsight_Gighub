@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Pluralsight_Gighub.Models
+﻿namespace Pluralsight_Gighub.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class Genre
     {
         public byte Id { get; set; }
