@@ -213,9 +213,9 @@ C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\De
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.OverrideConvetionsForGigsAndGenre.resources
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.PopulateGenresTable.resources
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csproj.GenerateResource.cache
-C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csproj.CoreCompileInputs.cache
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csproj.CopyComplete
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.dll
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.pdb
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csprojAssemblyReference.cache
 D:\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddForeignKeyPropertiesToGig.resources
+C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddForeignKeyPropertiesToGig.resources

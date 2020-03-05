@@ -21,16 +21,11 @@
         [Required]
         public byte Genre { get; set; }
 
-        [Required]
         public IEnumerable<Genre> Genres { get; set; }
 
-        [Required]
-        public DateTime DateTime
+        public DateTime GetDateTime()
         {
-            get
-            {
-                return DateTime.Parse(string.Format("{0} {1}", Date, Time));
-            }
+            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
     }
 }
