@@ -33,3 +33,19 @@ span.field-validation-error {
     background-color: #ff4342;
     border-color: #ff4342;
 }
+
+.btn {
+    font-size: 17px;
+    padding: 7px 20px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+/* Page-lever styles*/
+
+.gigs > li {
+    position: relative;
+    margin-bottom: 30px;
+    top: 0;
+    left: 70px;
+}
