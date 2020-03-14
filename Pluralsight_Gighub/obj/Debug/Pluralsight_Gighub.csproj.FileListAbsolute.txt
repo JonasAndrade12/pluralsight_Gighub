@@ -219,3 +219,4 @@ C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\De
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csprojAssemblyReference.cache
 D:\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddForeignKeyPropertiesToGig.resources
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddForeignKeyPropertiesToGig.resources
+C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddNameToApplicationUser.resources

@@ -1,12 +1,27 @@
 ﻿namespace Pluralsight_Gighub.Controllers
 {
+    using System;
+    using System.Data.Entity;
+    using System.Linq;
     using System.Web.Mvc;
+    using Pluralsight_Gighub.Models;
 
     public class HomeController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public HomeController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var upcomingGigs = _context.Gigs
+                .Include(x => x.Artist)
+                .Where(x => x.DateTime > DateTime.Now);
+
+            return View(upcomingGigs);
         }
 
         public ActionResult About()
