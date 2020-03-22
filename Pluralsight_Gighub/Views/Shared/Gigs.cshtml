@@ -2,8 +2,9 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<h1>@Model.Heading</h1>
 
-<ul class="gigs">
+<ul class="gigs voffset4">
     @foreach (var gig in Model.UpcomingGigs)
     {
         <li>
@@ -24,9 +25,7 @@
                 </span>
                 @if (Model.ShowActions)
                 {
-                    <button data-gig-id="@gig.Id" class="btn btn-default btn-sm pull-right js-toggle-attendance">
-                        Going ?
-                    </button>
+                    <button data-gig-id="@gig.Id" class="btn btn-default btn-sm pull-right js-toggle-attendance">Going?</button>
                 }
             </div>
         </li>
@@ -37,19 +36,19 @@
 {
     <script>
         $(document).ready(function () {
-            $(".js-toggle-attendance".click(function () {
+            $(".js-toggle-attendance").click(function (e) {
                 var button = $(e.target);
                 $.post("/api/attendances", { gigId: button.attr("data-gig-id") })
                     .done(function () {
                         button
                             .removeClass("btn-default")
                             .addClass("btn-info")
-                            .text("Going")
+                            .text("Going");
                     })
                     .fail(function () {
                         alert("Something failed!");
-                    })
-            }))
+                    });
+            });
         });
     </script>
 }

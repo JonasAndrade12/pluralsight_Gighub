@@ -26,10 +26,11 @@
             var viewModel = new GigsViewModel
             {
                 UpcomingGigs = upcomingGigs,
-                ShowActions = User.Identity.IsAuthenticated
+                ShowActions = User.Identity.IsAuthenticated,
+                Heading = "Upcomming Gigs"
             };
 
-            return View(upcomingGigs);
+            return View("Gigs", viewModel);
         }
 
         public ActionResult About()

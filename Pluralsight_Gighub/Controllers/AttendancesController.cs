@@ -7,11 +7,11 @@
     using System.Web.Http;
 
     [Authorize]
-    public class AttendanceController : ApiController
+    public class AttendancesController : ApiController
     {
         private ApplicationDbContext _context;
 
-        public AttendanceController()
+        public AttendancesController()
         {
             _context = new ApplicationDbContext();
         }
