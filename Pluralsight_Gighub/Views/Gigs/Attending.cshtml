@@ -1,6 +1,6 @@
 ﻿@model Pluralsight_Gighub.ViewModels.GigsViewModel
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Attending";
 }
 
 <ul class="gigs">
@@ -33,23 +33,3 @@
     }
 </ul>
 
-@section scripts
-{
-    <script>
-        $(document).ready(function () {
-            $(".js-toggle-attendance".click(function () {
-                var button = $(e.target);
-                $.post("/api/attendances", { gigId: button.attr("data-gig-id") })
-                    .done(function () {
-                        button
-                            .removeClass("btn-default")
-                            .addClass("btn-info")
-                            .text("Going")
-                    })
-                    .fail(function () {
-                        alert("Something failed!");
-                    })
-            }))
-        });
-    </script>
-}

@@ -1,10 +1,11 @@
 ﻿namespace Pluralsight_Gighub.Controllers
 {
+    using Pluralsight_Gighub.Models;
+    using Pluralsight_Gighub.ViewModels;
     using System;
     using System.Data.Entity;
     using System.Linq;
     using System.Web.Mvc;
-    using Pluralsight_Gighub.Models;
 
     public class HomeController : Controller
     {
@@ -21,6 +22,12 @@
                 .Include(x => x.Artist)
                 .Include(x => x.Genre)
                 .Where(x => x.DateTime > DateTime.Now);
+
+            var viewModel = new GigsViewModel
+            {
+                UpcomingGigs = upcomingGigs,
+                ShowActions = User.Identity.IsAuthenticated
+            };
 
             return View(upcomingGigs);
         }
