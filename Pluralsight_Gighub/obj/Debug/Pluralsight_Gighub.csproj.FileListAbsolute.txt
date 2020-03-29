@@ -209,7 +209,6 @@ D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\Microsoft.Owin.Security.T
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csprojAssemblyReference.cache
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.InitialModel.resources
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.CreateGigTable.resources
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.OverrideConvetionsForGigsAndGenre.resources

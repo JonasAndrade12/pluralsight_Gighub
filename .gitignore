@@ -6,37 +6,37 @@
 /.vs/Pluralsight_Gighub/v15/Server/sqlite3
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+Pluralsight_Gighub/[Dd]ebug/
+Pluralsight_Gighub/[Dd]ebugPublic/
+Pluralsight_Gighub/[Rr]elease/
+Pluralsight_Gighub/[Rr]eleases/
+Pluralsight_Gighub/x64/
+Pluralsight_Gighub/x86/
+Pluralsight_Gighub/bld/
+Pluralsight_Gighub/[Bb]in/
+Pluralsight_Gighub/[Oo]bj/
+Pluralsight_Gighub/[Ll]og/
 
 # MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+Pluralsight_Gighub/[Tt]est[Rr]esult*/
+Pluralsight_Gighub/[Bb]uild[Ll]og.*
 
 # NUNIT
-*.VisualState.xml
-TestResult.xml
+Pluralsight_Gighub/*.VisualState.xml
+Pluralsight_Gighub/TestResult.xml
 
 # Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
-dlldata.c
+Pluralsight_Gighub/[Dd]ebugPS/
+Pluralsight_Gighub/[Rr]eleasePS/
+Pluralsight_Gighub/dlldata.c
 
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
 
 # .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
+Pluralsight_Gighub/project.lock.json
+Pluralsight_Gighub/project.fragment.lock.json
+Pluralsight_Gighub/artifacts/
 
 # StyleCop
 StyleCopReport.xml
