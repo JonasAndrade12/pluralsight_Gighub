@@ -11,6 +11,10 @@
 
         public DbSet<Attendance> Attendances { get; set; }
 
+        public DbSet<Notification> Notifications { get; set; }
+
+        public DbSet<UserNotification> UserNotifications { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -25,6 +29,11 @@
         {
             modelBuilder.Entity<Attendance>()
                 .HasRequired(a => a.Gig)
+                .WithMany()
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<UserNotification>()
+                .HasRequired(a => a.User)
                 .WithMany()
                 .WillCascadeOnDelete(false);
 

@@ -345,3 +345,6 @@ C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\bin\Mi
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csproj.CopyComplete
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.dll
 C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.pdb
+D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csprojAssemblyReference.cache
+D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddIsCanceledToGig.resources
+D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddNotification.resources
