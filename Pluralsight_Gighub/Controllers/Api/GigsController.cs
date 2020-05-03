@@ -5,6 +5,7 @@
     using System.Web.Http;
     using Microsoft.AspNet.Identity;
     using Pluralsight_Gighub.Models;
+    using Pluralsight_Gighub.ViewModels;
 
     [Authorize]
     public class GigsController : ApiController
@@ -31,6 +32,19 @@
             }
 
             gig.Cancel();
+
+            _context.SaveChanges();
+
+            return Ok();
+        }
+
+        [HttpPatch]
+        public IHttpActionResult Update(GigFormViewModel viewModel)
+        {
+            var userId = User.Identity.GetUserId();
+            var gig = _context.Gigs.Single(g => g.Id == viewModel.Id && g.ArtistId == userId);
+
+            gig.Update(viewModel.GetDateTime(), viewModel.Venue, viewModel.Genre);
 
             _context.SaveChanges();
 

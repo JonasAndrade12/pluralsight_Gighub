@@ -5,6 +5,7 @@
     using System.Collections.ObjectModel;
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
+    using Pluralsight_Gighub.ViewModels;
 
     public class Gig
     {
@@ -39,7 +40,21 @@
         {
             IsCanceled = true;
 
-            var notification = new Notification(this, NotificationType.GigCanceled);
+            var notification = Notification.GigCanceled(this);
+
+            foreach (var attendee in Attendances.Select(a => a.Attendee))
+            {
+                attendee.Notify(notification);
+            }
+        }
+
+        public void Update(DateTime dateTime, string venue, byte genre)
+        {
+            Venue = venue;
+            DateTime = dateTime;
+            GenreId = genre;
+
+            var notification = Notification.GigUpdated(this, dateTime, venue);
 
             foreach (var attendee in Attendances.Select(a => a.Attendee))
             {

@@ -348,3 +348,6 @@ C:\Users\jonas.andrade\source\repos\Pluralsight_Gighub\Pluralsight_Gighub\obj\De
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.csprojAssemblyReference.cache
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddIsCanceledToGig.resources
 D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\obj\Debug\Pluralsight_Gighub.Migrations.AddNotification.resources
+D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\AutoMapper.dll
+D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\AutoMapper.pdb
+D:\Projectos\pluralsight_Gighub\Pluralsight_Gighub\bin\AutoMapper.xml
