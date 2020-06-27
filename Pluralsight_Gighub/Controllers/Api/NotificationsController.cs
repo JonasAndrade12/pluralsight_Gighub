@@ -6,6 +6,7 @@
     using System.Web.Http;
     using AutoMapper;
     using Microsoft.AspNet.Identity;
+    using Pluralsight_Gighub.Dto;
     using Pluralsight_Gighub.Models;
 
     [Authorize]
@@ -22,32 +23,12 @@
         {
             var userId = User.Identity.GetUserId();
             var notifications = _context.UserNotifications
-                .Where(u => u.UserId == userId)
+                .Where(u => u.UserId == userId && u.IsRead == false)
                 .Select(u => u.Notification)
                 .Include(u => u.Gig.Artist)
                 .ToList();
 
-            Mapper.
-
-            return notifications.Select(n => new NotificationDto()
-            {
-                DateTime = n.DateTime,
-                Gig = new GigDto
-                {
-                    Artist = new UserDto
-                    {
-                        Id = n.Gig.Artist.Id,
-                        Name = n.Gig.Artist.Name
-                    },
-                    DateTime = n.Gig.DateTime,
-                    Id = n.Gig.Id,
-                    IsCanceled = n.Gig.IsCanceled,
-                    Venue = n.Gig.Venue
-                },
-                OriginalDateTime = n.OriginalDateTime,
-                OriginalVenue = n.OriginalVenue,
-                Type = n.Type
-            });
+            return notifications.Select(Mapper.Map<Notification, NotificationDto>);
         }
     }
 }

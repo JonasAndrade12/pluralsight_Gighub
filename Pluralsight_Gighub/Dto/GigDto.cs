@@ -1,4 +1,4 @@
-﻿namespace Pluralsight_Gighub.Controllers.Api
+﻿namespace Pluralsight_Gighub.Dto
 {
     using System;
 

@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -40,5 +42,27 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            $.getJSON("/api/notifications", function (notifications) {
+                $(".js-notifications-count")
+                    .text(notifications.length)
+                    .removeClass("hide")
+                    .addClass("animate__animated animate__bounce");
+            });
+
+            $(".notifications").popover({
+                content: function () {
+                    var compiled = _.template("Hello <%= name %>");
+                    var html = compiled({ name: "Jonas" });
+
+                    return html;
+                },
+                html: true,
+                title: "Notifications",
+                placement: "bottom"
+            });
+        })
+    </script>
 </body>
 </html>
